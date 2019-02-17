@@ -1,0 +1,77 @@
+<!-- Jaskiran (300978743)-->
+<%include ./partials/header.ejs %>
+
+    <div class="container">
+      <div class="jumbotron">
+           <h1 class="display-4">Welcome to <%=title%></h1>
+           
+          <% if(title=="Jaskiran's Website" || title=="About Me" || title=="Services") { %>
+            <a class="btn btn-primary btn-lg" href="/about" role="button">About Me</a>
+            <a class="btn btn-primary btn-lg" href="/services" role="button">Services</a>
+            <a class="btn btn-primary btn-lg" href="/project" role="button">Projects</a>
+            <a class="btn btn-primary btn-lg" href="/contact" role="button">Contact Me</a><br>
+        
+
+
+             <% } if(title=="Jaskiran's Website") { %>
+    <h1>Changes call for innovation,innovation leads to progress. </h1><br>
+            <p>We are providing services like website building, mobile apps etc. using latest technologies. </p>
+          </p>
+           <% } %>
+           <% if(title=="About Me") { %>
+               </div>
+    </div>
+  
+<div class="row" style="margin-left:25%">
+  <div class="column">
+    <h2 style="margin-left:7%">Hard Skills</h2>
+            <ul style="list-style-type:none; margin-left:3%">
+<li>Back-end technical Skills: C#, Java, Asp.net</li>
+<li>Front-end technical Skills: HTML, CSS, Bootstrap</li>
+<li>Databases: SQL, Oracle</li>
+<li>Server-side technologies: JSP/Servlets</li>
+<li>REST API Development</li>
+<li>Logic development and algorithm making</li>
+<li>Knowledge about SDLC</li>
+<li>Project Management skills<li>
+</ul>
+  </div>
+  <div class="column" style="margin-top:5%">
+   <img src="Assets/images/Profile.jpg" height="200px" width="200px" style="margin-left:70%"/>
+  </div>
+</div>
+
+<div class="row" >
+  <div class="column" style="margin-left:25%">
+    <h2 style="margin-left:10%">Soft Skills</h2>
+            <ul style="list-style-type:none;margin-left:3%">
+<li>Quick Learner</li>
+<li>Self-Motivated</li>
+<li>Databases: SQL, Oracle</li>
+<li>Good Time-Management abilities</li>
+<li>Problem-Solver</li>
+<li>Efficient Decision Making</li>
+<li>Flexible</li>
+<li>Responsible<li>
+</ul> 
+  </div>
+  <div class="column">
+    <h2 style="margin-right:2px;margin-left:250px">Jaskiran Kaur</h2><br>
+   <a href="/Assets/images/Jaskiran Kaur.pdf" target="_blank"  style="margin-left:300px">Click Here</a>
+  </div>
+</div>
+
+
+<% } if(title=="Projects") { %>
+   <a class="btn btn-primary btn-lg" href="/projectslist" role="button">Click to View Projects</a>
+           <% } %>
+
+
+
+
+           <%  if(title=="Contact") { %>
+   <a class="btn btn-primary btn-lg" href="/contactform" role="button">Click to Contact Me</a>
+           <% } %>
+  </body>
+</html>
+<% include ./partials/footer.ejs%>

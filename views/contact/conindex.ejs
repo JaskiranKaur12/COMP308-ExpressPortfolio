@@ -1,0 +1,61 @@
+<!-- Jaskiran (300978743)-->
+
+<%include ../partials/header.ejs %>
+ 
+   
+  
+<h3><%=title %></h3>
+<div>
+   <form action="*">
+      <div width="100%">
+        <table style="width=80%">
+        <tr>
+          <td>
+            <label for="fname">First Name</label>
+          </td>
+          <td>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lname">Last Name</label>
+          </td>
+          <td>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country">Country</label>
+          </td>
+          <td>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="subject">Message</label>
+          </td>
+          <td>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea><br>
+          </td>
+        </tr>
+        <tr>
+          <td><a hidden></td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+        </table>
+        </div>
+      </form>
+</div>
+ </div>
+ </div>
+  </div>
+ <% include ../partials/footer.ejs%>
